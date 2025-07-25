@@ -115,7 +115,7 @@ class TransactionListItem extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
-                      isExpense ? "-₹$amount" : "+₹$amount",
+                      isExpense ? "-\$$amount" : "+\$$amount",
                       style: TextStyle(
                         color: isExpense ? AppColor.error : AppColor.success,
                         fontWeight: FontWeight.bold,

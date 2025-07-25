@@ -106,7 +106,7 @@ class CategoriesGrid extends StatelessWidget {
                       style: titleText(16, Colors.white),
                     ),
                     Text(
-                      'Total: ${NumberFormat.currency(locale: 'en_US', symbol: '₹').format(totalAmount)}',
+                      'Total: ${NumberFormat.currency(locale: 'en_US', symbol: '\$').format(totalAmount)}',
                       style: titleText(16, Colors.white),
                     ),
                   ],
@@ -117,12 +117,12 @@ class CategoriesGrid extends StatelessWidget {
                   children: [
                     if (incomeAmount > 0)
                       Text(
-                        'Income: ${NumberFormat.currency(locale: 'en_US', symbol: '₹').format(incomeAmount)}',
+                        'Income: ${NumberFormat.currency(locale: 'en_US', symbol: '\$').format(incomeAmount)}',
                         style: normalText(14, Colors.green),
                       ),
                     if (expenseAmount > 0)
                       Text(
-                        'Expense: ${NumberFormat.currency(locale: 'en_US', symbol: '₹').format(expenseAmount)}',
+                        'Expense: ${NumberFormat.currency(locale: 'en_US', symbol: '\$').format(expenseAmount)}',
                         style: normalText(14, Colors.red),
                       ),
                   ],

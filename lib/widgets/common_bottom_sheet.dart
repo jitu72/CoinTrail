@@ -94,7 +94,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                '₹',
+                '\$',
                 style: TextStyle(
                   fontSize: 48,
                   color: Colors.white.withOpacity(0.8),

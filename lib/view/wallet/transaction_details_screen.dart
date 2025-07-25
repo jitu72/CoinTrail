@@ -147,7 +147,7 @@ class TransactionDetailsScreen extends StatelessWidget {
             const SizedBox(height: 32),
 
             // Transaction Details
-            _buildDetailRow("Amount", isExpense ? "-₹$amount" : "+₹$amount"),
+            _buildDetailRow("Amount", isExpense ? "-\$$amount" : "+\$$amount"),
             _buildDetailRow("Category", category),
             _buildDetailRow("Type", isExpense ? "Expense" : "Income"),
             _buildDetailRow("Date", DateFormat("MMM d, y").format(date)),

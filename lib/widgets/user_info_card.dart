@@ -74,7 +74,7 @@ class UserInfoCard extends StatelessWidget {
           const SizedBox(height: 12),
           Obx(() {
             return Text(
-              controller.isAmountVisible.value ? '₹${controller.totalBalance.value}' : '₹•••••',
+              controller.isAmountVisible.value ? '\$${controller.totalBalance.value}' : '\$•••••',
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 32,
@@ -88,7 +88,7 @@ class UserInfoCard extends StatelessWidget {
                 children: [
                   _buildBalanceInfoItem(
                     label: 'Income',
-                    value: controller.isAmountVisible.value ? '₹${controller.totalIncome.value}' : '₹•••••',
+                    value: controller.isAmountVisible.value ? '\$${controller.totalIncome.value}' : '\$•••••',
                     iconData: Icons.arrow_upward_rounded,
                     color: const Color(0xFF4CAF50),
                   ),
@@ -99,7 +99,7 @@ class UserInfoCard extends StatelessWidget {
                   ),
                   _buildBalanceInfoItem(
                     label: 'Expenses',
-                    value: controller.isAmountVisible.value ? '₹${controller.totalExpense.value}' : '₹•••••',
+                    value: controller.isAmountVisible.value ? '\$${controller.totalExpense.value}' : '\$•••••',
                     iconData: Icons.arrow_downward_rounded,
                     color: const Color(0xFFF44336),
                   ),
