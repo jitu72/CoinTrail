@@ -8,10 +8,10 @@ class CommonBottomSheet extends StatefulWidget {
   const CommonBottomSheet({super.key});
 
   @override
-  _CommonBottomSheetState createState() => _CommonBottomSheetState();
+  CommonBottomSheetState createState() => CommonBottomSheetState();
 }
 
-class _CommonBottomSheetState extends State<CommonBottomSheet> {
+class CommonBottomSheetState extends State<CommonBottomSheet> {
   final controller = Get.find<TransactionController>();
   final _transactionType = Transactions.income.obs;
 

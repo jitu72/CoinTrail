@@ -12,7 +12,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final controller = Get.put(SplashController());
+    Get.put(SplashController());
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
         value:  SystemUiOverlayStyle(
