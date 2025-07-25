@@ -1,3 +1,4 @@
+import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -45,7 +46,7 @@ class HomeController extends GetxController {
       totalBalance.value = await LocalDataService.getBalance();
       userEmail.value = 'guest@local.app';
     } catch (e) {
-      print('Error loading user data: $e');
+      developer.log('Error loading user data: $e', name: 'HomeController');
     } finally {
       isLoading.value = false;
     }
@@ -69,7 +70,7 @@ class HomeController extends GetxController {
       calculateTotals();
       groupTransactionsByDate();
     } catch (e) {
-      print('Error fetching transactions: $e');
+      developer.log('Error fetching transactions: $e', name: 'HomeController');
     } finally {
       isLoading.value = false;
     }
