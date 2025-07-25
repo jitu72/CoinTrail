@@ -118,8 +118,8 @@ class TransactionDetailsScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          _getCategoryColor(category, isExpense).withOpacity(0.2),
-                          _getCategoryColor(category, isExpense).withOpacity(0.1),
+                          _getCategoryColor(category, isExpense).withValues(alpha: 0.2),
+                          _getCategoryColor(category, isExpense).withValues(alpha: 0.1),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
@@ -166,7 +166,7 @@ class TransactionDetailsScreen extends StatelessWidget {
             child: Text(
               label,
               style: TextStyle(
-                color: Colors.white.withOpacity(0.6),
+                color: Colors.white.withValues(alpha: 0.6),
                 fontSize: 16,
               ),
             ),

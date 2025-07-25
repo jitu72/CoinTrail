@@ -86,8 +86,8 @@ class CategoriesGrid extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  AppColor.darkBackground.withOpacity(0.9),
-                  AppColor.darkSurface.withOpacity(0.7),
+                  AppColor.darkBackground.withValues(alpha: 0.9),
+                  AppColor.darkSurface.withValues(alpha: 0.7),
                 ],
               ),
               borderRadius: const BorderRadius.only(
@@ -130,9 +130,9 @@ class CategoriesGrid extends StatelessWidget {
                 const SizedBox(height: 8),
                 LinearProgressIndicator(
                   value: totalAmount > 0 ? expenseAmount / totalAmount : 0,
-                  backgroundColor: Colors.green.withOpacity(0.5),
+                  backgroundColor: Colors.green.withValues(alpha: 0.5),
                   valueColor: AlwaysStoppedAnimation<Color>(
-                      Colors.red.withOpacity(0.7)),
+                      Colors.red.withValues(alpha: 0.7)),
                 ),
               ],
             ),

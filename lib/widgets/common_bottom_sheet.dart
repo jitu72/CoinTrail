@@ -42,7 +42,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 10,
             offset: const Offset(0, -5),
           ),
@@ -82,7 +82,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
           Text(
             _transactionType.value == Transactions.income ? "INCOME AMOUNT" : "EXPENSE AMOUNT",
             style: TextStyle(
-              color: Colors.white.withOpacity(0.6),
+              color: Colors.white.withValues(alpha: 0.6),
               fontSize: 12,
               fontWeight: FontWeight.w600,
               letterSpacing: 1.5,
@@ -97,7 +97,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
                 '\$',
                 style: TextStyle(
                   fontSize: 48,
-                  color: Colors.white.withOpacity(0.8),
+                  color: Colors.white.withValues(alpha: 0.8),
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -119,7 +119,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
                     hintText: '0.00',
                     hintStyle: TextStyle(
                       fontSize: 48,
-                      color: Colors.white.withOpacity(0.3),
+                      color: Colors.white.withValues(alpha: 0.3),
                       fontWeight: FontWeight.w600,
                     ),
                     border: InputBorder.none,
@@ -135,7 +135,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
             height: 1,
             width: MediaQuery.of(context).size.width * 0.7,
             margin: const EdgeInsets.symmetric(vertical: 8),
-            color: Colors.white.withOpacity(0.3),
+            color: Colors.white.withValues(alpha: 0.3),
           ),
         ],
       ),
@@ -169,7 +169,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
         decoration: BoxDecoration(
           color: isSelected ? Colors.white : Colors.transparent,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.white.withOpacity(0.5), width: 1.5),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.5), width: 1.5),
         ),
         child: Row(
           children: [
@@ -220,7 +220,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 300),
           decoration: BoxDecoration(
-            color: isSelected ? Colors.white.withOpacity(0.2) : Colors.white.withOpacity(0.1),
+            color: isSelected ? Colors.white.withValues(alpha: 0.2) : Colors.white.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(color: isSelected ? Colors.white : Colors.transparent, width: 2),
           ),
@@ -260,9 +260,9 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
             padding: const EdgeInsets.all(16),
             margin: const EdgeInsets.symmetric(vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
+              color: Colors.white.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.2), width: 1),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -270,7 +270,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
                 Text(
                   'Transaction Date',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withValues(alpha: 0.7),
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -288,9 +288,9 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
         Container(
           margin: const EdgeInsets.symmetric(vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.2), width: 1),
           ),
           child: TextField(
             controller: controller.titleController,
@@ -299,7 +299,7 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
             decoration: InputDecoration(
               hintText: 'Transaction Name',
               hintStyle: TextStyle(
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.white.withValues(alpha: 0.5),
               ),
               border: InputBorder.none,
               contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -320,14 +320,14 @@ class _CommonBottomSheetState extends State<CommonBottomSheet> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.white.withOpacity(0.3),
-                  Colors.white.withOpacity(0.1),
+                  Colors.white.withValues(alpha: 0.3),
+                  Colors.white.withValues(alpha: 0.1),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.2), width: 1),
             ),
             child: Center(
               child: Text(

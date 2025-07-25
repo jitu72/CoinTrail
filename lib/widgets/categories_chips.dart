@@ -22,7 +22,7 @@
 //       spacing: 8.0, // Adjust spacing between chips as needed
 //       children: categories.map((category) {
 //         return ChoiceChip(
-//           selectedColor: AppColor.darkSurface.withOpacity(0.4),
+//           selectedColor: AppColor.darkSurface.withValues(alpha: 0.4),
 //           backgroundColor: Colors.transparent,
 //           label: Row(
 //             mainAxisSize: MainAxisSize.min,

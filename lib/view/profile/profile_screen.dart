@@ -66,7 +66,7 @@ class ProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
@@ -97,7 +97,7 @@ class ProfileScreen extends StatelessWidget {
             subtitle: Text(
               controller.userEmail.value,
               style: TextStyle(
-                color: Colors.white.withOpacity(0.8),
+                color: Colors.white.withValues(alpha: 0.8),
                 fontSize: 14,
               ),
             ),
@@ -115,7 +115,7 @@ class ProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
@@ -158,7 +158,7 @@ class ProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
@@ -210,14 +210,14 @@ class ProfileScreen extends StatelessWidget {
                   subtitle: Text(
                     "₹${transaction['amount'].toStringAsFixed(2)}",
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.8),
+                      color: Colors.white.withValues(alpha: 0.8),
                       fontSize: 14,
                     ),
                   ),
                   trailing: Text(
                     DateFormat("MMM d, y").format(DateTime.parse(transaction['date'])),
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.6),
+                      color: Colors.white.withValues(alpha: 0.6),
                       fontSize: 12,
                     ),
                   ),
@@ -238,7 +238,7 @@ class ProfileScreen extends StatelessWidget {
           CustomToast.successToast("Success", "Logged out successfully");
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.red.withOpacity(0.8),
+          backgroundColor: Colors.red.withValues(alpha: 0.8),
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),

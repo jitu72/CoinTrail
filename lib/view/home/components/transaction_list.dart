@@ -59,13 +59,13 @@ class TransactionsContent extends StatelessWidget {
                       Icon(
                         Icons.receipt_long,
                         size: 64,
-                        color: Colors.white.withOpacity(0.3),
+                        color: Colors.white.withValues(alpha: 0.3),
                       ),
                       const SizedBox(height: 16),
                       Text(
                         "No transactions yet",
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white.withValues(alpha: 0.7),
                           fontSize: 16,
                         ),
                       ),
@@ -114,7 +114,7 @@ class TransactionsContent extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                         decoration: BoxDecoration(
-                          color: AppColor.primary.withOpacity(0.2),
+                          color: AppColor.primary.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(

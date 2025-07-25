@@ -25,17 +25,17 @@ class AppColor {
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     colors: [
-      Colors.white.withOpacity(0.1),
-      Colors.white.withOpacity(0.05),
+      Colors.white.withValues(alpha: 0.1),
+      Colors.white.withValues(alpha: 0.05),
     ],
   );
   static LinearGradient primaryGradient = LinearGradient(
-    colors: [primary, primary.withOpacity(0.5)],
+    colors: [primary, primary.withValues(alpha: 0.5)],
     begin: Alignment.topLeft,
     end: Alignment.bottomLeft,
   );
   static LinearGradient secondaryGradient = LinearGradient(
-    colors: [secondary, secondary.withOpacity(0.5)],
+    colors: [secondary, secondary.withValues(alpha: 0.5)],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );

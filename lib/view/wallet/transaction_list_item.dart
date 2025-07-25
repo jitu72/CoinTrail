@@ -34,7 +34,7 @@ class TransactionListItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha: 0.1),
               blurRadius: 4,
               offset: const Offset(0, 2),
             ),
@@ -65,8 +65,8 @@ class TransactionListItem extends StatelessWidget {
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          _getCategoryColor(category, isExpense).withOpacity(0.2),
-                          _getCategoryColor(category, isExpense).withOpacity(0.1),
+                          _getCategoryColor(category, isExpense).withValues(alpha: 0.2),
+                          _getCategoryColor(category, isExpense).withValues(alpha: 0.1),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
@@ -99,7 +99,7 @@ class TransactionListItem extends StatelessWidget {
                         Text(
                           controller.formatDateTime(trans['date'].toString()),
                           style: TextStyle(
-                            color: Colors.white.withOpacity(0.6),
+                            color: Colors.white.withValues(alpha: 0.6),
                             fontSize: 14,
                           ),
                         ),
@@ -111,7 +111,7 @@ class TransactionListItem extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: isExpense ? AppColor.error.withOpacity(0.2) : AppColor.success.withOpacity(0.2),
+                      color: isExpense ? AppColor.error.withValues(alpha: 0.2) : AppColor.success.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(

@@ -23,8 +23,8 @@ class StatisticsScreen extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                AppColor.darkSurface.withOpacity(0.98),
-                AppColor.darkBackground.withOpacity(0.98),
+                AppColor.darkSurface.withValues(alpha: 0.98),
+                AppColor.darkBackground.withValues(alpha: 0.98),
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -35,7 +35,7 @@ class StatisticsScreen extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.3),
+                color: Colors.black.withValues(alpha: 0.3),
                 blurRadius: 15,
                 spreadRadius: 5,
               ),
@@ -49,7 +49,7 @@ class StatisticsScreen extends StatelessWidget {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.4),
+                  color: Colors.white.withValues(alpha: 0.4),
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -70,7 +70,7 @@ class StatisticsScreen extends StatelessWidget {
                       icon: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.1),
+                          color: Colors.white.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: const Icon(Icons.close, color: Colors.white),
@@ -101,8 +101,8 @@ class StatisticsScreen extends StatelessWidget {
                   selectionOverlay: Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        top: BorderSide(color: Colors.white.withOpacity(0.2), width: 1),
-                        bottom: BorderSide(color: Colors.white.withOpacity(0.2), width: 1),
+                        top: BorderSide(color: Colors.white.withValues(alpha: 0.2), width: 1),
+                        bottom: BorderSide(color: Colors.white.withValues(alpha: 0.2), width: 1),
                       ),
                     ),
                   ),
@@ -131,7 +131,7 @@ class StatisticsScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     elevation: 8,
-                    shadowColor: AppColor.primary.withOpacity(0.5),
+                    shadowColor: AppColor.primary.withValues(alpha: 0.5),
                   ),
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -194,7 +194,7 @@ class StatisticsScreen extends StatelessWidget {
                           gradient: LinearGradient(
                             colors: [
                               AppColor.darkBackground,
-                              AppColor.darkSurface.withOpacity(0.7),
+                              AppColor.darkSurface.withValues(alpha: 0.7),
                             ],
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
@@ -206,7 +206,7 @@ class StatisticsScreen extends StatelessWidget {
                             padding: const EdgeInsets.only(right: 30),
                             child: Icon(
                               Icons.insights,
-                              color: Colors.white.withOpacity(0.15),
+                              color: Colors.white.withValues(alpha: 0.15),
                               size: 100,
                             ),
                           ),
@@ -221,15 +221,15 @@ class StatisticsScreen extends StatelessWidget {
                           margin: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
                           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.12),
+                            color: Colors.white.withValues(alpha: 0.12),
                             borderRadius: BorderRadius.circular(14),
                             border: Border.all(
-                              color: Colors.white.withOpacity(0.2),
+                              color: Colors.white.withValues(alpha: 0.2),
                               width: 1,
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.2),
+                                color: Colors.black.withValues(alpha: 0.2),
                                 blurRadius: 10,
                                 offset: const Offset(0, 3),
                               ),
@@ -351,20 +351,20 @@ class StatisticsScreen extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Colors.blueAccent.withOpacity(0.15),
-            Colors.blueAccent.withOpacity(0.05),
+            Colors.blueAccent.withValues(alpha: 0.15),
+            Colors.blueAccent.withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: Colors.blueAccent.withOpacity(0.2),
+          color: Colors.blueAccent.withValues(alpha: 0.2),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.25),
+            color: Colors.black.withValues(alpha: 0.25),
             blurRadius: 12,
             offset: const Offset(0, 5),
           ),
@@ -387,14 +387,14 @@ class StatisticsScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Row(
                   children: [
                     Icon(
                       Icons.insights,
-                      color: Colors.blueAccent.withOpacity(0.9),
+                      color: Colors.blueAccent.withValues(alpha: 0.9),
                       size: 16,
                     ),
                     const SizedBox(width: 6),
@@ -423,15 +423,15 @@ class StatisticsScreen extends StatelessWidget {
                 zoomMode: ZoomMode.x,
               ),
               primaryXAxis: CategoryAxis(
-                labelStyle: TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 12),
+                labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.9), fontSize: 12),
                 majorGridLines: const MajorGridLines(width: 0),
                 majorTickLines: const MajorTickLines(size: 0),
               ),
               primaryYAxis: NumericAxis(
-                labelStyle: TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 12),
+                labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.8), fontSize: 12),
                 majorGridLines: MajorGridLines(
                   width: 1,
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withValues(alpha: 0.1),
                   dashArray: const <double>[5, 5],
                 ),
                 axisLine: const AxisLine(width: 0),
@@ -443,14 +443,14 @@ class StatisticsScreen extends StatelessWidget {
                 lineType: CrosshairLineType.both,
                 lineDashArray: const <double>[5, 5],
                 lineWidth: 1,
-                lineColor: Colors.white.withOpacity(0.5),
+                lineColor: Colors.white.withValues(alpha: 0.5),
               ),
               tooltipBehavior: TooltipBehavior(
                 enable: true,
                 duration: 2000,
                 canShowMarker: true,
                 color: AppColor.darkSurface,
-                borderColor: Colors.white.withOpacity(0.3),
+                borderColor: Colors.white.withValues(alpha: 0.3),
                 borderWidth: 1,
                 textStyle: const TextStyle(color: Colors.white),
               ),
@@ -470,7 +470,7 @@ class StatisticsScreen extends StatelessWidget {
                   dataSource: monthlyData,
                   xValueMapper: (Map<String, dynamic> data, _) => data['month'],
                   yValueMapper: (Map<String, dynamic> data, _) => data['income'],
-                  color: AppColor.success.withOpacity(0.9),
+                  color: AppColor.success.withValues(alpha: 0.9),
                   width: 3,
                   markerSettings: MarkerSettings(
                     isVisible: true,
@@ -489,7 +489,7 @@ class StatisticsScreen extends StatelessWidget {
                   dataSource: monthlyData,
                   xValueMapper: (Map<String, dynamic> data, _) => data['month'],
                   yValueMapper: (Map<String, dynamic> data, _) => data['expense'],
-                  color: AppColor.error.withOpacity(0.9),
+                  color: AppColor.error.withValues(alpha: 0.9),
                   width: 3,
                   markerSettings: MarkerSettings(
                     isVisible: true,
@@ -511,8 +511,8 @@ class StatisticsScreen extends StatelessWidget {
                   yValueMapper: (Map<String, dynamic> data, _) => data['savings'],
                   gradient: LinearGradient(
                     colors: [
-                      Colors.blue.withOpacity(0.7),
-                      Colors.blue.withOpacity(0.05),
+                      Colors.blue.withValues(alpha: 0.7),
+                      Colors.blue.withValues(alpha: 0.05),
                     ],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
@@ -533,10 +533,10 @@ class StatisticsScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.08),
+              color: Colors.white.withValues(alpha: 0.08),
               borderRadius: BorderRadius.circular(16),
               border: Border.all(
-                color: Colors.white.withOpacity(0.1),
+                color: Colors.white.withValues(alpha: 0.1),
                 width: 1,
               ),
             ),
@@ -545,12 +545,12 @@ class StatisticsScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.blue.withOpacity(0.2),
+                    color: Colors.blue.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Icon(
                     Icons.trending_up,
-                    color: Colors.blue.withOpacity(0.9),
+                    color: Colors.blue.withValues(alpha: 0.9),
                     size: 20,
                   ),
                 ),
@@ -571,7 +571,7 @@ class StatisticsScreen extends StatelessWidget {
                       Text(
                         "You've improved your savings rate by ${controller.calculateSavingsChange().toStringAsFixed(0)}% compared to last month",
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white.withValues(alpha: 0.7),
                           fontSize: 12,
                         ),
                       ),
@@ -679,20 +679,20 @@ class StatisticsScreen extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                color.withOpacity(0.25),
-                color.withOpacity(0.1),
+                color.withValues(alpha: 0.25),
+                color.withValues(alpha: 0.1),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
-              color: color.withOpacity(0.4),
+              color: color.withValues(alpha: 0.4),
               width: 1.5,
             ),
             boxShadow: [
               BoxShadow(
-                color: color.withOpacity(0.15),
+                color: color.withValues(alpha: 0.15),
                 blurRadius: 12,
                 spreadRadius: 1,
                 offset: const Offset(0, 4),
@@ -707,7 +707,7 @@ class StatisticsScreen extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: color.withOpacity(0.2),
+                      color: color.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
@@ -720,7 +720,7 @@ class StatisticsScreen extends StatelessWidget {
                   Text(
                     title,
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withValues(alpha: 0.9),
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
                     ),
@@ -781,12 +781,12 @@ class StatisticsScreen extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: Colors.white.withOpacity(0.15),
+          color: Colors.white.withValues(alpha: 0.15),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.25),
+            color: Colors.black.withValues(alpha: 0.25),
             blurRadius: 12,
             spreadRadius: 1,
             offset: const Offset(0, 5),
@@ -815,12 +815,12 @@ class StatisticsScreen extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.1),
+                    color: Colors.white.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Icon(
                     controller.isAmountVisible.value ? Icons.visibility_outlined : Icons.visibility_off_outlined,
-                    color: Colors.white.withOpacity(0.8),
+                    color: Colors.white.withValues(alpha: 0.8),
                     size: 20,
                   ),
                 ),
@@ -833,7 +833,7 @@ class StatisticsScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: balanceColor.withOpacity(0.2),
+                  color: balanceColor.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Icon(
@@ -863,7 +863,7 @@ class StatisticsScreen extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
-                          color: isPositive ? AppColor.success.withOpacity(0.2) : AppColor.error.withOpacity(0.2),
+                          color: isPositive ? AppColor.success.withValues(alpha: 0.2) : AppColor.error.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
@@ -892,20 +892,20 @@ class StatisticsScreen extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Colors.white.withOpacity(0.1),
-            Colors.white.withOpacity(0.05),
+            Colors.white.withValues(alpha: 0.1),
+            Colors.white.withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: Colors.white.withOpacity(0.1),
+          color: Colors.white.withValues(alpha: 0.1),
           width: 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -969,9 +969,9 @@ class StatisticsScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  _buildLegendItem('Income', AppColor.success.withOpacity(0.7)),
+                  _buildLegendItem('Income', AppColor.success.withValues(alpha: 0.7)),
                   const SizedBox(width: 24),
-                  _buildLegendItem('Expenses', AppColor.error.withOpacity(0.7)),
+                  _buildLegendItem('Expenses', AppColor.error.withValues(alpha: 0.7)),
                 ],
               ),
             ),
@@ -1021,13 +1021,13 @@ class StatisticsScreen extends StatelessWidget {
           color: isSelected ? AppColor.darkBackground : Colors.transparent,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isSelected ? AppColor.darkCard : Colors.white.withOpacity(0.3),
+            color: isSelected ? AppColor.darkCard : Colors.white.withValues(alpha: 0.3),
             width: 1.5,
           ),
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: AppColor.darkBackground.withOpacity(0.3),
+                    color: AppColor.darkBackground.withValues(alpha: 0.3),
                     blurRadius: 8,
                     spreadRadius: 1,
                   ),
@@ -1037,7 +1037,7 @@ class StatisticsScreen extends StatelessWidget {
         child: Text(
           label,
           style: TextStyle(
-            color: isSelected ? Colors.white : Colors.white.withOpacity(0.7),
+            color: isSelected ? Colors.white : Colors.white.withValues(alpha: 0.7),
             fontWeight: FontWeight.w600,
             fontSize: 16,
           ),
@@ -1051,17 +1051,17 @@ class StatisticsScreen extends StatelessWidget {
       margin: const EdgeInsets.all(0),
       plotAreaBorderWidth: 0,
       primaryXAxis: CategoryAxis(
-        labelStyle: TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 12),
+        labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.8), fontSize: 12),
         majorGridLines: const MajorGridLines(width: 0),
         labelRotation: 0,
         labelAlignment: LabelAlignment.center,
         labelPosition: ChartDataLabelPosition.outside,
       ),
       primaryYAxis: NumericAxis(
-        labelStyle: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 12),
+        labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.7), fontSize: 12),
         majorGridLines: MajorGridLines(
           width: 1,
-          color: Colors.white.withOpacity(0.1),
+          color: Colors.white.withValues(alpha: 0.1),
           dashArray: const <double>[5, 5],
         ),
         axisLine: const AxisLine(width: 0),
@@ -1077,7 +1077,7 @@ class StatisticsScreen extends StatelessWidget {
       series: <CartesianSeries>[
         ColumnSeries<Map<String, dynamic>, String>(
           name: 'Income',
-          color: AppColor.success.withOpacity(0.7),
+          color: AppColor.success.withValues(alpha: 0.7),
           dataSource: controller.filteredTransactions
               .where((transaction) =>
                   transaction['type'] == 'income' &&
@@ -1094,7 +1094,7 @@ class StatisticsScreen extends StatelessWidget {
         ),
         ColumnSeries<Map<String, dynamic>, String>(
           name: 'Expense',
-          color: AppColor.error.withOpacity(0.7),
+          color: AppColor.error.withValues(alpha: 0.7),
           dataSource: controller.filteredTransactions
               .where((transaction) =>
                   transaction['type'] == 'expense' &&
@@ -1131,20 +1131,20 @@ class StatisticsScreen extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Colors.white.withOpacity(0.1),
-            Colors.white.withOpacity(0.05),
+            Colors.white.withValues(alpha: 0.1),
+            Colors.white.withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: Colors.white.withOpacity(0.1),
+          color: Colors.white.withValues(alpha: 0.1),
           width: 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -1229,20 +1229,20 @@ class StatisticsScreen extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Colors.white.withOpacity(0.1),
-            Colors.white.withOpacity(0.05),
+            Colors.white.withValues(alpha: 0.1),
+            Colors.white.withValues(alpha: 0.05),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: Colors.white.withOpacity(0.1),
+          color: Colors.white.withValues(alpha: 0.1),
           width: 1,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -1293,7 +1293,7 @@ class StatisticsScreen extends StatelessWidget {
               Text(
                 NumberFormat.currency(symbol: '\$').format(amount),
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.8),
+                  color: Colors.white.withValues(alpha: 0.8),
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
@@ -1307,7 +1307,7 @@ class StatisticsScreen extends StatelessWidget {
                 height: 10,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Colors.white.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
@@ -1320,7 +1320,7 @@ class StatisticsScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                   boxShadow: [
                     BoxShadow(
-                      color: color.withOpacity(0.5),
+                      color: color.withValues(alpha: 0.5),
                       blurRadius: 5,
                       offset: const Offset(0, 2),
                     ),
@@ -1333,7 +1333,7 @@ class StatisticsScreen extends StatelessWidget {
           Text(
             '${percentage.toStringAsFixed(1)}%',
             style: TextStyle(
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha: 0.7),
               fontSize: 12,
             ),
           ),
@@ -1360,7 +1360,7 @@ class StatisticsScreen extends StatelessWidget {
       'Salary': AppColor.success,
       'Business': Colors.lightGreen,
     };
-    return categoryColors[category] ?? Color((category.hashCode & 0xFFFFFF).toInt()).withOpacity(1.0);
+    return categoryColors[category] ?? Color((category.hashCode & 0xFFFFFF).toInt()).withValues(alpha: 1.0);
   }
 }
 
