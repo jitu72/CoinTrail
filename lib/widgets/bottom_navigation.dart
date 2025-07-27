@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/view/home/home_screen.dart';
-import 'package:spendify/view/wallet/statistics_screen.dart';
-import 'package:spendify/widgets/common_bottom_sheet.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/view/home/home_screen.dart';
+import 'package:expenzo/view/wallet/statistics_screen.dart';
+import 'package:expenzo/widgets/common_bottom_sheet.dart';
 
 import '../utils/utils.dart';
 

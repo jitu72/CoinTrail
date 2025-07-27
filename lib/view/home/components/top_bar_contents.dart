@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/home_controller/home_controller.dart';
-import 'package:spendify/routes/app_pages.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/home_controller/home_controller.dart';
+import 'package:expenzo/routes/app_pages.dart';
 
 class TopBarContents extends StatelessWidget {
   final HomeController controller = Get.find<HomeController>();

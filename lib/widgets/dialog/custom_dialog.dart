@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/utils/utils.dart';
-import 'package:spendify/widgets/custom_input.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/utils/utils.dart';
+import 'package:expenzo/widgets/custom_input.dart';
 
 class CustomAlertDialog {
   static confirmAdmin({

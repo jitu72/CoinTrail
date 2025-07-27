@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/home_controller/home_controller.dart';
-import 'package:spendify/widgets/toast/custom_toast.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/home_controller/home_controller.dart';
+import 'package:expenzo/widgets/toast/custom_toast.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

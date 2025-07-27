@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/home_controller/home_controller.dart';
-import 'package:spendify/controller/wallet_controller/wallet_controller.dart';
-import 'package:spendify/utils/size_helpers.dart';
-import 'package:spendify/utils/utils.dart';
-import 'package:spendify/view/home/components/top_bar_contents.dart';
-import 'package:spendify/view/home/components/transaction_list.dart';
-import 'package:spendify/widgets/user_info_card.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/home_controller/home_controller.dart';
+import 'package:expenzo/controller/wallet_controller/wallet_controller.dart';
+import 'package:expenzo/utils/size_helpers.dart';
+import 'package:expenzo/utils/utils.dart';
+import 'package:expenzo/view/home/components/top_bar_contents.dart';
+import 'package:expenzo/view/home/components/transaction_list.dart';
+import 'package:expenzo/widgets/user_info_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

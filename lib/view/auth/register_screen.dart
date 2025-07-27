@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/auth_controller/register_controller.dart';
-import 'package:spendify/utils/size_helpers.dart';
-import 'package:spendify/utils/utils.dart';
-import 'package:spendify/widgets/custom_button.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/auth_controller/register_controller.dart';
+import 'package:expenzo/utils/size_helpers.dart';
+import 'package:expenzo/utils/utils.dart';
+import 'package:expenzo/widgets/custom_button.dart';
 
 import '../../routes/app_pages.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/wallet_controller/wallet_controller.dart';
-import 'package:spendify/model/categories_model.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/wallet_controller/wallet_controller.dart';
+import 'package:expenzo/model/categories_model.dart';
 
 class EditTransactionScreen extends StatelessWidget {
   final Map<String, dynamic> transaction;

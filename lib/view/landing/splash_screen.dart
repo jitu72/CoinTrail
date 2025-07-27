@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/splash/splash_controller.dart';
-import 'package:spendify/utils/utils.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/splash/splash_controller.dart';
+import 'package:expenzo/utils/utils.dart';
 
 class SplashScreen extends StatelessWidget {
 
@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
               children: [
                 Image.asset("assets/splash1.png"),
                 Text(
-                  "Spendify",
+                  "Expenzo",
                   style: titleText(24, AppColor.secondaryExtraSoft),
                 )
               ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/controller/home_controller/home_controller.dart';
+import 'package:expenzo/controller/home_controller/home_controller.dart';
 
 class UserInfoCard extends StatelessWidget {
   final double size;

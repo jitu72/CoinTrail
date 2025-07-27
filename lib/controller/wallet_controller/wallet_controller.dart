@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/controller/home_controller/home_controller.dart';
-import 'package:spendify/model/transaction_model.dart';
-import 'package:spendify/services/local_data_service.dart';
-import 'package:spendify/widgets/toast/custom_toast.dart';
+import 'package:expenzo/controller/home_controller/home_controller.dart';
+import 'package:expenzo/model/transaction_model.dart';
+import 'package:expenzo/services/local_data_service.dart';
+import 'package:expenzo/widgets/toast/custom_toast.dart';
 
 class TransactionController extends GetxController {
   final amountController = TextEditingController();

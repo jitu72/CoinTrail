@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/home_controller/home_controller.dart';
-import 'package:spendify/utils/utils.dart';
-import 'package:spendify/view/wallet/all_transaction_screen.dart';
-import 'package:spendify/view/wallet/transaction_list_item.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/home_controller/home_controller.dart';
+import 'package:expenzo/utils/utils.dart';
+import 'package:expenzo/view/wallet/all_transaction_screen.dart';
+import 'package:expenzo/view/wallet/transaction_list_item.dart';
 
 class TransactionsContent extends StatelessWidget {
   final int limit;

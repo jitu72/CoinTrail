@@ -1,8 +1,8 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_svg/svg.dart';
-// import 'package:spendify/config/app_color.dart';
-// import 'package:spendify/model/categories_model.dart';
-// import 'package:spendify/utils/utils.dart';
+// import 'package:expenzo/config/app_color.dart';
+// import 'package:expenzo/model/categories_model.dart';
+// import 'package:expenzo/utils/utils.dart';
 
 // class CategoriesChips extends StatelessWidget {
 //   final List<CategoriesModel> categories;

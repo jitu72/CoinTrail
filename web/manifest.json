@@ -1,6 +1,6 @@
 {
-    "name": "spendify",
-    "short_name": "spendify",
+    "name": "expenzo",
+    "short_name": "expenzo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

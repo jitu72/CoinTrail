@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:spendify/routes/app_pages.dart';
-import 'package:spendify/services/local_data_service.dart';
+import 'package:expenzo/routes/app_pages.dart';
+import 'package:expenzo/services/local_data_service.dart';
 
 Future<void> main() async {
   // debugRepaintRainbowEnabled = true;
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Spendify',
+      title: 'Expenzo',
       initialRoute: Routes.SPLASH, // Changed back to SPLASH so we see the splash animation
       getPages: AppPages.routes,
     );

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:spendify/model/transaction_model.dart';
+import 'package:expenzo/model/transaction_model.dart';
 
 class LocalDataService {
   static const String _transactionsKey = 'transactions';

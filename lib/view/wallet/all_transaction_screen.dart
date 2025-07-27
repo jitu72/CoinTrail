@@ -3,10 +3,10 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:intl/intl.dart';
-import 'package:spendify/config/app_color.dart';
-import 'package:spendify/controller/all_transaction/all_transaction_controller.dart';
-import 'package:spendify/utils/utils.dart';
-import 'package:spendify/view/wallet/transaction_list_item.dart';
+import 'package:expenzo/config/app_color.dart';
+import 'package:expenzo/controller/all_transaction/all_transaction_controller.dart';
+import 'package:expenzo/utils/utils.dart';
+import 'package:expenzo/view/wallet/transaction_list_item.dart';
 
 class AllTransactionsScreen extends StatefulWidget {
   const AllTransactionsScreen({super.key});

@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo       SPENDIFY FLUTTER APP RUNNER
+echo       EXPENZO FLUTTER APP RUNNER
 echo ========================================
 echo.
 

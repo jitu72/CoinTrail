@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:spendify/utils/utils.dart';
+import 'package:expenzo/utils/utils.dart';
 
 // ignore: must_be_immutable
 class CustomButton extends StatelessWidget {

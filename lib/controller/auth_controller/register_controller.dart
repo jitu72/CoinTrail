@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:spendify/widgets/bottom_navigation.dart';
-import 'package:spendify/widgets/toast/custom_toast.dart';
-import 'package:spendify/services/local_data_service.dart';
+import 'package:expenzo/widgets/bottom_navigation.dart';
+import 'package:expenzo/widgets/toast/custom_toast.dart';
+import 'package:expenzo/services/local_data_service.dart';
 
 class RegisterController extends GetxController {
   RxBool isLoading = false.obs;

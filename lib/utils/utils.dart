@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:spendify/model/categories_model.dart';
+import 'package:expenzo/model/categories_model.dart';
 
 enum RotationDirection { clockwise, counterclockwise }
 
