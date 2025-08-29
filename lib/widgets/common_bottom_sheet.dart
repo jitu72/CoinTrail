@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/wallet_controller/wallet_controller.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/wallet_controller/wallet_controller.dart';
 
 class CommonBottomSheet extends StatefulWidget {
   const CommonBottomSheet({super.key});

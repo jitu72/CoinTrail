@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:expenzo/model/categories_model.dart';
-import 'package:expenzo/view/wallet/transaction_details_screen.dart';
+import 'package:cointrail/model/categories_model.dart';
+import 'package:cointrail/view/wallet/transaction_details_screen.dart';
 
 import '../../config/app_color.dart';
 import '../../controller/home_controller/home_controller.dart';

@@ -1,8 +1,8 @@
 import 'dart:developer' as developer;
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:expenzo/model/transaction_model.dart';
-import 'package:expenzo/services/local_data_service.dart';
+import 'package:cointrail/model/transaction_model.dart';
+import 'package:cointrail/services/local_data_service.dart';
 
 class HomeController extends GetxController {
   var userEmail = 'guest@example.com'.obs;

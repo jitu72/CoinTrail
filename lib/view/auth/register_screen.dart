@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/auth_controller/register_controller.dart';
-import 'package:expenzo/utils/size_helpers.dart';
-import 'package:expenzo/utils/utils.dart';
-import 'package:expenzo/widgets/custom_button.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/auth_controller/register_controller.dart';
+import 'package:cointrail/utils/size_helpers.dart';
+import 'package:cointrail/utils/utils.dart';
+import 'package:cointrail/widgets/custom_button.dart';
 
 import '../../routes/app_pages.dart';
 

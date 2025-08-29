@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/home_controller/home_controller.dart';
-import 'package:expenzo/controller/wallet_controller/wallet_controller.dart';
-import 'package:expenzo/utils/size_helpers.dart';
-import 'package:expenzo/utils/utils.dart';
-import 'package:expenzo/view/home/components/top_bar_contents.dart';
-import 'package:expenzo/view/home/components/transaction_list.dart';
-import 'package:expenzo/widgets/user_info_card.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/home_controller/home_controller.dart';
+import 'package:cointrail/controller/wallet_controller/wallet_controller.dart';
+import 'package:cointrail/utils/size_helpers.dart';
+import 'package:cointrail/utils/utils.dart';
+import 'package:cointrail/view/home/components/top_bar_contents.dart';
+import 'package:cointrail/view/home/components/transaction_list.dart';
+import 'package:cointrail/widgets/user_info_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                             child: _buildSummaryCard(
                               icon: Icons.arrow_upward_rounded,
                               label: 'Income',
-                              amount: '₹${controller.totalIncome.value}',
+                              amount: '\$${controller.totalIncome.value}',
                               color: const Color(0xFF4CAF50),
                             ),
                           ),
@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                             child: _buildSummaryCard(
                               icon: Icons.arrow_downward_rounded,
                               label: 'Expenses',
-                              amount: '₹${controller.totalExpense.value}',
+                              amount: '\$${controller.totalExpense.value}',
                               color: const Color(0xFFF44336),
                             ),
                           ),

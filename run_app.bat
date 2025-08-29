@@ -1,10 +1,15 @@
 @echo off
 echo ========================================
-echo       EXPENZO FLUTTER APP RUNNER
+echo       COINTRAIL FLUTTER APP RUNNER
 echo ========================================
 echo.
 
-cd /d "c:\Users\Jihadul Islam\StudioProjects\spendify"
+REM Set environment variables to avoid space issues
+set GRADLE_USER_HOME=C:\gradle_home
+set FLUTTER_TEMP=C:\temp\flutter
+set ANDROID_USER_HOME=C:\android_home
+
+cd /d "c:\Users\Jihadul Islam\StudioProjects\cointrail"
 
 echo [1/5] Checking Flutter installation...
 flutter --version

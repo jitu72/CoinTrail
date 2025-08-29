@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/home_controller/home_controller.dart';
-import 'package:expenzo/controller/wallet_controller/wallet_controller.dart';
-import 'package:expenzo/model/categories_model.dart';
-import 'package:expenzo/view/wallet/edit_transaction_screen.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/home_controller/home_controller.dart';
+import 'package:cointrail/controller/wallet_controller/wallet_controller.dart';
+import 'package:cointrail/model/categories_model.dart';
+import 'package:cointrail/view/wallet/edit_transaction_screen.dart';
 
 class TransactionDetailsScreen extends StatelessWidget {
   final Map<String, dynamic> transaction;

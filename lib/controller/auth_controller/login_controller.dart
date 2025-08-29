@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:expenzo/widgets/bottom_navigation.dart';
-import 'package:expenzo/widgets/toast/custom_toast.dart';
+import 'package:cointrail/widgets/bottom_navigation.dart';
+import 'package:cointrail/widgets/toast/custom_toast.dart';
 
 class LoginController extends GetxController {
   RxBool isLoading = false.obs;

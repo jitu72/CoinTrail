@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/home_controller/home_controller.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/home_controller/home_controller.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class StatisticsScreen extends StatelessWidget {
@@ -621,7 +621,7 @@ class StatisticsScreen extends StatelessWidget {
                 child: _buildSummaryCard(
                   'Income',
                   controller.isAmountVisible.value
-                      ? NumberFormat.currency(symbol: '₹').format(controller.totalIncome.value)
+                      ? NumberFormat.currency(symbol: '\$').format(controller.totalIncome.value)
                       : '******',
                   Icons.arrow_upward,
                   AppColor.success,
@@ -635,7 +635,7 @@ class StatisticsScreen extends StatelessWidget {
                 child: _buildSummaryCard(
                   'Expenses',
                   controller.isAmountVisible.value
-                      ? NumberFormat.currency(symbol: '₹').format(controller.totalExpense.value)
+                      ? NumberFormat.currency(symbol: '\$').format(controller.totalExpense.value)
                       : '******',
                   Icons.arrow_downward,
                   AppColor.error,
@@ -848,7 +848,7 @@ class StatisticsScreen extends StatelessWidget {
                 children: [
                   Text(
                     controller.isAmountVisible.value
-                        ? NumberFormat.currency(symbol: '₹').format(controller.totalBalance.value.abs())
+                        ? NumberFormat.currency(symbol: '\$').format(controller.totalBalance.value.abs())
                         : '******',
                     style: const TextStyle(
                       color: Colors.white,
@@ -1114,7 +1114,7 @@ class StatisticsScreen extends StatelessWidget {
         if (args.dataPoints != null && args.dataPoints!.isNotEmpty) {
           final dataPoint = args.dataPoints![0];
           args.header = dataPoint.x;
-          args.text = '₹${dataPoint.y}';
+          args.text = '\$${dataPoint.y}';
         }
       },
     );

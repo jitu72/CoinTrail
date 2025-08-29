@@ -2,8 +2,8 @@ import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:expenzo/model/transaction_model.dart';
-import 'package:expenzo/services/local_data_service.dart';
+import 'package:cointrail/model/transaction_model.dart';
+import 'package:cointrail/services/local_data_service.dart';
 
 class HomeController extends GetxController {
   var userEmail = 'guest@example.com'.obs;
@@ -43,8 +43,8 @@ class HomeController extends GetxController {
     isLoading.value = true;
     try {
       userName.value = await LocalDataService.getUserName();
+      userEmail.value = await LocalDataService.getUserEmail();
       totalBalance.value = await LocalDataService.getBalance();
-      userEmail.value = 'guest@local.app';
     } catch (e) {
       developer.log('Error loading user data: $e', name: 'HomeController');
     } finally {
@@ -105,6 +105,31 @@ class HomeController extends GetxController {
   Future<void> signOut() async {
     // For local version, just show a message
     Get.snackbar('Info', 'This is the local version - no authentication required');
+  }
+
+  Future<void> updateUserInfo(String name, String email) async {
+    try {
+      developer.log('Starting updateUserInfo: name=$name, email=$email', name: 'HomeController');
+      
+      userName.value = name;
+      userEmail.value = email;
+      
+      developer.log('Updated observable values: userName=${userName.value}, userEmail=${userEmail.value}', name: 'HomeController');
+      
+      // Save to local storage
+      await LocalDataService.saveUserName(name);
+      await LocalDataService.saveUserEmail(email);
+      
+      developer.log('User info updated successfully in local storage', name: 'HomeController');
+    } catch (e) {
+      developer.log('Error updating user info: $e', name: 'HomeController');
+      Get.snackbar(
+        'Error', 
+        'Failed to update user information',
+        backgroundColor: Colors.red.withOpacity(0.8),
+        colorText: Colors.white,
+      );
+    }
   }
 
   void toggleAmountVisibility() {

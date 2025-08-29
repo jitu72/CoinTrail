@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/home_controller/home_controller.dart';
-import 'package:expenzo/utils/utils.dart';
-import 'package:expenzo/view/wallet/all_transaction_screen.dart';
-import 'package:expenzo/view/wallet/transaction_list_item.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/home_controller/home_controller.dart';
+import 'package:cointrail/utils/utils.dart';
+import 'package:cointrail/view/wallet/all_transaction_screen.dart';
+import 'package:cointrail/view/wallet/transaction_list_item.dart';
 
 class TransactionsContent extends StatelessWidget {
   final int limit;

@@ -1,4 +1,4 @@
-package com.example.spendify
+package com.example.cointrail
 
 import io.flutter.embedding.android.FlutterActivity
 

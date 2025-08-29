@@ -1,11 +1,12 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:expenzo/model/transaction_model.dart';
+import 'package:cointrail/model/transaction_model.dart';
 
 class LocalDataService {
   static const String _transactionsKey = 'transactions';
   static const String _balanceKey = 'balance';
   static const String _userNameKey = 'userName';
+  static const String _userEmailKey = 'userEmail';
 
   // Get SharedPreferences instance
   static Future<SharedPreferences> get _prefs async => await SharedPreferences.getInstance();
@@ -30,6 +31,17 @@ class LocalDataService {
   static Future<String> getUserName() async {
     final prefs = await _prefs;
     return prefs.getString(_userNameKey) ?? 'User';
+  }
+
+  // User Email Methods
+  static Future<void> saveUserEmail(String email) async {
+    final prefs = await _prefs;
+    await prefs.setString(_userEmailKey, email);
+  }
+
+  static Future<String> getUserEmail() async {
+    final prefs = await _prefs;
+    return prefs.getString(_userEmailKey) ?? 'guest@example.com';
   }
 
   // Transaction Methods

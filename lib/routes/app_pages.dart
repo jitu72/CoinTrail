@@ -1,11 +1,11 @@
 
 import 'package:get/get.dart';
-import 'package:expenzo/view/auth/login_screen.dart';
-import 'package:expenzo/view/auth/register_screen.dart';
-import 'package:expenzo/view/home/home_screen.dart';
-import 'package:expenzo/view/landing/get_started_screen.dart';
-import 'package:expenzo/view/landing/splash_screen.dart';
-import 'package:expenzo/view/profile/profile_screen.dart';
+import 'package:cointrail/view/auth/login_screen.dart';
+import 'package:cointrail/view/auth/register_screen.dart';
+import 'package:cointrail/view/home/home_screen.dart';
+import 'package:cointrail/view/landing/get_started_screen.dart';
+import 'package:cointrail/view/landing/splash_screen.dart';
+import 'package:cointrail/view/profile/profile_screen.dart';
 part 'app_routes.dart';
 
 class AppPages {

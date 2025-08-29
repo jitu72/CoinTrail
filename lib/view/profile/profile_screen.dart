@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/controller/home_controller/home_controller.dart';
-import 'package:expenzo/widgets/toast/custom_toast.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/controller/home_controller/home_controller.dart';
+import 'package:cointrail/view/profile/edit_user_info_dialog.dart';
+
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -50,8 +51,7 @@ class ProfileScreen extends StatelessWidget {
             _buildRecentTransactionsSection(controller),
             const SizedBox(height: 24),
 
-            // Logout Button
-            _buildLogoutButton(controller),
+            // ... Logout Button removed ...
           ],
         ),
       ),
@@ -66,7 +66,7 @@ class ProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.2),
+            color: Colors.black.withOpacity(0.2),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
@@ -75,16 +75,45 @@ class ProfileScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            "User Information",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "User Information",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Builder(
+                builder: (context) => IconButton(
+                  icon: const Icon(Icons.edit, color: Colors.white),
+                  tooltip: 'Edit User Info',
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (context) => EditUserInfoDialog(
+                        initialName: controller.userName.value,
+                        initialEmail: controller.userEmail.value,
+                        onSave: (name, email) {
+                          controller.updateUserInfo(name, email);
+                          Get.snackbar(
+                            'Success',
+                            'User information updated successfully',
+                            backgroundColor: Colors.green.withOpacity(0.8),
+                            colorText: Colors.white,
+                          );
+                        },
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
           ),
           const SizedBox(height: 16),
-          ListTile(
+          Obx(() => ListTile(
             leading: const Icon(Icons.person, color: Colors.white),
             title: Text(
               controller.userName.value,
@@ -97,11 +126,11 @@ class ProfileScreen extends StatelessWidget {
             subtitle: Text(
               controller.userEmail.value,
               style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.8),
+                color: Colors.white.withOpacity(0.8),
                 fontSize: 14,
               ),
             ),
-          ),
+          )),
         ],
       ),
     );
@@ -134,7 +163,7 @@ class ProfileScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Obx(() => Text(
-                "₹${controller.totalBalance.value.toStringAsFixed(2)}",
+                "\$${controller.totalBalance.value.toStringAsFixed(2)}",
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 32,
@@ -208,7 +237,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                   subtitle: Text(
-                    "₹${transaction['amount'].toStringAsFixed(2)}",
+                    "\$${transaction['amount'].toStringAsFixed(2)}",
                     style: TextStyle(
                       color: Colors.white.withValues(alpha: 0.8),
                       fontSize: 14,
@@ -230,29 +259,5 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildLogoutButton(HomeController controller) {
-    return Center(
-      child: ElevatedButton(
-        onPressed: () async {
-          await controller.signOut();
-          CustomToast.successToast("Success", "Logged out successfully");
-        },
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.red.withValues(alpha: 0.8),
-          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-          ),
-        ),
-        child: const Text(
-          "Logout",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-    );
-  }
+  // Logout button removed
 }

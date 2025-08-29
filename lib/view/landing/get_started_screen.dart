@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:expenzo/config/app_color.dart';
-import 'package:expenzo/utils/size_helpers.dart';
-import 'package:expenzo/utils/utils.dart';
-import 'package:expenzo/widgets/custom_button.dart';
+import 'package:cointrail/config/app_color.dart';
+import 'package:cointrail/utils/size_helpers.dart';
+import 'package:cointrail/utils/utils.dart';
+import 'package:cointrail/widgets/custom_button.dart';
 
 import '../../routes/app_pages.dart';
 
@@ -28,7 +28,7 @@ class GetStartedScreen extends StatelessWidget {
                           TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
                   verticalSpace(8),
                   const Text(
-                    "Discover a smarter way to keep track of your expense using Spendify.",
+                    "Discover a smarter way to keep track of your expense using CoinTrail.",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
