@@ -8,11 +8,11 @@ class EditUserInfoDialog extends StatefulWidget {
   final void Function(String name, String email) onSave;
 
   const EditUserInfoDialog({
-    Key? key,
+    super.key,
     required this.initialName,
     required this.initialEmail,
     required this.onSave,
-  }) : super(key: key);
+  });
 
   @override
   State<EditUserInfoDialog> createState() => _EditUserInfoDialogState();
@@ -55,9 +55,9 @@ class _EditUserInfoDialogState extends State<EditUserInfoDialog> {
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Name',
-                labelStyle: TextStyle(color: Colors.white.withOpacity(0.8)),
+                labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.8)),
                 enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white.withOpacity(0.5)),
+                  borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.5)),
                 ),
                 focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: AppColor.primary),
@@ -71,9 +71,9 @@ class _EditUserInfoDialogState extends State<EditUserInfoDialog> {
               style: const TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Email',
-                labelStyle: TextStyle(color: Colors.white.withOpacity(0.8)),
+                labelStyle: TextStyle(color: Colors.white.withValues(alpha: 0.8)),
                 enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white.withOpacity(0.5)),
+                  borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.5)),
                 ),
                 focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: AppColor.primary),
@@ -97,7 +97,7 @@ class _EditUserInfoDialogState extends State<EditUserInfoDialog> {
           onPressed: () => Get.back(),
           child: Text(
             'Cancel',
-            style: TextStyle(color: Colors.white.withOpacity(0.8)),
+            style: TextStyle(color: Colors.white.withValues(alpha: 0.8)),
           ),
         ),
         ElevatedButton(

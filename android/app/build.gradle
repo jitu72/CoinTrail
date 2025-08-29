@@ -41,7 +41,7 @@ android {
     }
 
     defaultConfig {
-    // TODO: Cointrail your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+    // TODO: CoinTrail your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
     applicationId "com.example.cointrail"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
